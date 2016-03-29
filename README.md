@@ -5,7 +5,7 @@ This WordPress plugin extends the WooCommerce Pay Per Post plugin, to be able to
 ## Installation
 
 * Download and install [WooCommerce Pay Per Post](http://wordpress.emoxie.com/woocommerce-pay-per-post/)
-* Download this plugin and unpack it into the WodPress plugin directory
+* Download the latest version of this plugin from https://github.com/janschumann/woocommerce-paypersinglepost/releases unpack it into the WodPress plugin directory
 * Configure WooCommerce Pay Per Post http://exapmle.com/wp-admin/options-general.php?page=wcppp-plugin-options_options
 
 ## Configure Products
