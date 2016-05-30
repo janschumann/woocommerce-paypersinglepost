@@ -50,13 +50,12 @@ if ( ! class_exists( 'Woocommerce_PayPerSinglePost' ) ) {
 					} );
 
 					$matches = array();
-					if (preg_match('/(.*)<a href.*class="more-link"/', $content, $matches)) {
+					if (preg_match('/(.*)<span.*"more-/', $content, $matches)) {
 						// content contains a read more button. use this as teaser text
-						$content = strip_tags($matches[1]);
+						$content = strip_tags($matches[1], '<img><a>');
 					}
 					else {
-						// no read more button. just trim content @todo make word count configurable?.
-						$content = wp_trim_words( $content, 50, ' ...' );
+						$content = "";
 					}
 
 					return "<p>" . $content . "</p>" . str_replace( '{{product_id}}', $productID, get_option( 'wcppp_oops_content' ) );
